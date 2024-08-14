@@ -1,11 +1,10 @@
-// Исключение, выбрасываемое при некорректном размере массива
 class MyArraySizeException extends Exception {
     public MyArraySizeException(String message) {
         super(message);
     }
 }
 
-// Исключение, выбрасываемое при некорректных данных в массиве
+
 class MyArrayDataException extends Exception {
     public MyArrayDataException(int row, int col) {
         super(String.format("Invalid data at cell [%d,%d]", row, col));
